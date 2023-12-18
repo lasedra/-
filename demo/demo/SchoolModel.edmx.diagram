@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ffcf4086f1b84f6b98197a0aee68c7f6" Name="Diagram1">
+        <EntityTypeShape EntityType="SchoolModel.AttachedProduct" Width="1.5" PointX="5.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.Client" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.ClientService" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.DocumentByService" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.Gender" Width="1.5" PointX="1.5" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.Manufacturer" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.Product" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.ProductSale" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.Service" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.ServicePhoto" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolModel.Tag" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="SchoolModel.FK_AttachedProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolModel.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolModel.FK_ClientService_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolModel.FK_ClientService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolModel.FK_DocumentByService_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolModel.FK_ProductSale_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolModel.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolModel.FK_ServicePhoto_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolModel.TagOfClient" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

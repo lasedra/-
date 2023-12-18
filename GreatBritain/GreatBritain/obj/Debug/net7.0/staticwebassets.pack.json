@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\.eski\\source\\repos\\GreatBritain\\GreatBritain\\wwwroot\\css\\stylesheet.css",
+      "PackagePath": "staticwebassets\\css\\stylesheet.css"
+    },
+    {
+      "Id": "C:\\Users\\.eski\\source\\repos\\GreatBritain\\GreatBritain\\wwwroot\\images\\school_logo.png",
+      "PackagePath": "staticwebassets\\images\\school_logo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.GreatBritain.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.GreatBritain.props",
+      "PackagePath": "build\\GreatBritain.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.GreatBritain.props",
+      "PackagePath": "buildMultiTargeting\\GreatBritain.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.GreatBritain.props",
+      "PackagePath": "buildTransitive\\GreatBritain.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

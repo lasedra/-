@@ -1,0 +1,68 @@
+﻿body {
+    font-size: 13px;
+    font-family: Verdana, Arial, Helvetica, Sans-Serif;
+    background-color: #f7f7fa;
+    padding-left: 40px;
+}
+
+table {
+    vertical-align: middle;
+    text-align: left;
+}
+
+.fixed-size-image {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin: 15px;
+}
+
+.header {
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+.titlepage {
+    align-self: center;
+    font-size: 32px;
+    font-family: Verdana, Arial, Helvetica, Sans-Serif;
+    padding-left: 20px;
+}
+
+.nopoint{
+    list-style-type: none;
+}
+
+.horisontalalig {
+    display: inline-flex;
+}
+
+.marginel{
+    margin: 5px;
+}
+
+.product-card{
+    width: 18rem;
+    height: 23.5rem;
+}
+
+.card-width{
+    height: 80px;
+}
+
+.wraptitle {
+    align-self: center;
+    font-size: 18px;
+    font-family: Verdana;
+    width: 14rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrapcost {
+    width: 14rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

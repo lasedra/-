@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "zC+jpJX+R0e1BrsYSOHpCFN+dNzuBOI9iW7DSK3PMC4=",
+  "Source": "GreatBritain",
+  "BasePath": "_content/GreatBritain",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GreatBritain\\wwwroot",
+      "Source": "GreatBritain",
+      "ContentRoot": "C:\\Users\\.eski\\source\\repos\\GreatBritain\\GreatBritain\\wwwroot\\",
+      "BasePath": "_content/GreatBritain",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\.eski\\source\\repos\\GreatBritain\\GreatBritain\\wwwroot\\css\\stylesheet.css",
+      "SourceId": "GreatBritain",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\.eski\\source\\repos\\GreatBritain\\GreatBritain\\wwwroot\\",
+      "BasePath": "_content/GreatBritain",
+      "RelativePath": "css/stylesheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\stylesheet.css"
+    },
+    {
+      "Identity": "C:\\Users\\.eski\\source\\repos\\GreatBritain\\GreatBritain\\wwwroot\\images\\school_logo.png",
+      "SourceId": "GreatBritain",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\.eski\\source\\repos\\GreatBritain\\GreatBritain\\wwwroot\\",
+      "BasePath": "_content/GreatBritain",
+      "RelativePath": "images/school_logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\school_logo.png"
+    }
+  ]
+}

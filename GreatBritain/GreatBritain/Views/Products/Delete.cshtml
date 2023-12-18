@@ -1,0 +1,25 @@
+﻿@model GreatBritain.Models.Product
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Удаление продукта</h1>
+
+<h3>Вы уверены, что хотите удалить данный продукт?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">Наименование: @Html.DisplayFor(model => model.Title)</dt>
+        <dt class = "col-sm-2">Цена: @Html.DisplayFor(model => model.Cost) руб.</dt>
+        <dt class = "col-sm-2">Описание: @Html.DisplayFor(model => model.Description)</dt>
+        <dt class = "col-sm-2">Активно: @Html.DisplayFor(model => model.IsActive)</dt>
+        <dt class = "col-sm-2">Производитель: @Html.DisplayFor(model => model.Manufacturer.Name)</dt>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Удалить" class="btn btn-danger" /> |
+        <a asp-action="Index">Назад</a>
+    </form>
+</div>

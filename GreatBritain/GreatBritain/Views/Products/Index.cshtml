@@ -1,0 +1,41 @@
+﻿@model IEnumerable<GreatBritain.Models.Product>
+@{
+    ViewData["Title"] = "Главная";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="/css/stylesheet.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+<div class="header">
+    <img src="/images/school_logo.png" width="80" height="80"/>
+    <label class="titlepage">Главная</label>
+</div>
+<p><a asp-action="Create">Добавить</a></p>
+
+<ul class="row mt-2 mb-5 margin_row">
+    @foreach (var item in Model)
+    {
+        <li class="col-lg-3 item nopoint" >
+            <div class="card marginel product-card">
+                <div style="justify-content: center">
+                    @if (item.PhotoProduct != null && item.PhotoProduct.Length > 0)
+                    { <img src="data:image/jpeg;base64,@Convert.ToBase64String(item.PhotoProduct)"  class="fixed-size-image"/> }
+                    else
+                    { <img src="/images/no_photo.jpg"  class="fixed-size-image"/> }
+                </div>
+                    <div class="card-body card-width">
+                          <label class="wraptitle">@Html.DisplayFor(modelItem => item.Title)</label>
+                          <label class="wrapcost">@Html.DisplayFor(modelItem => item.Cost) руб.</label>
+                    </div>
+                    <div class="horisontalalig">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="marginel">Редактировать</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="marginel">Подробнее</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="marginel">Удалить</a>
+                    </div>
+                </div>
+        </li>
+    }
+</ul>

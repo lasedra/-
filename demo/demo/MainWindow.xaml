@@ -1,0 +1,24 @@
+﻿<Window x:Class="demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="{Binding ElementName=MainFrame,Path=Content.Title}"
+        Height="620" 
+        Width="1200"
+        MinHeight="620" 
+        MinWidth="1200">
+    <Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row = "1" ContentRendered="MainFrame_ContentRendered"/>
+        <StackPanel Background="AliceBlue" Grid.Row="0"></StackPanel>
+        <Image Source="/Resources/school_logo.png" Grid.Row="0" Width="80" Height="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <Button x:Name= "BackButton" Click="BackButton_Click" Grid.Row="0"
+                HorizontalAlignment = "Right" Height="45" Width="120" FontSize="16" Background="DarkBlue" Foreground="White" FontWeight="Bold"  Margin="5 0 30 0">Назад</Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height= "100"/>
+            <RowDefinition Height= "*"/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>
